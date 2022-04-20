@@ -7,22 +7,63 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-/* Add styles here! */
+header {
+  min-height: 40%;
+}
 
 strong {
   color: hsl(160deg, 100%, 30%);
 }
 
-.indented-heading {
-  background-color: hsl(45deg, 100%, 50%);
+main {
+  height: 100%;
 }
 
-section.max-width-wrapper {
+section {
+  min-height: 50%;
+  border-top: 8px solid hsl(0deg, 0%, 40%);
   background-color: hsl(0deg, 0%, 60%);
 }
 
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  margin-left: -8px;
+  margin-top: 8px;
+  padding: 16px 24px;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  max-width: fit-content;
+}
+
 .card {
+  max-width: 70%;
+  margin: 0 auto;
   background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 32px;
+}
+
+header .max-width-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+main .max-width-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+
+p {
+  padding-left: 16px;
+}
+
+h1 {
+  padding-left: 16px;
 }
